@@ -1,4 +1,64 @@
 body{
-    /* background-image: url("static/encyclopedia/doodle_background.jpg"); */
-    background-color: black;
+    background-image: url("/static/encyclopedia/black_background2.jpg");
+    /* background-size: cover; */
+    color: white;
+    margin: 1%;
+}
+
+#knowledgepedia_logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+.flexbox-center{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#id_query{
+    width: 67%;
+    line-height: 45px;
+    border-radius: 25px;
+    background-color: #5e5e5ec4;
+    background-image: url("/static/encyclopedia/searchbar_icon.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 25px;
+    border: 0px;
+    padding-left: 2.5%;
+    font-size: 18px;
+    color: white;
+}
+
+#searchbar{
+    width: 100%;
+}
+
+#searchbar-div{
+    margin: 2%;
+}
+
+.flexbox-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.flex-item{
+    /* width: auto; */
+    padding: 6% 4%;
+    background-color: #078eefb7;
+    border-radius: 25px;
+
+}
+
+.flexbox-list li{
+    width: 120px;
+    line-height: 50px;
+    text-align: center;
 }

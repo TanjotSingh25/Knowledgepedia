@@ -5,12 +5,25 @@
 {% endblock %}
 
 {% block body %}
-    <h1>All Pages</h1>
+    {% load static %}
 
-    <ul>
+    <div class="flexbox-center">
+        <img src="{% static 'encyclopedia/knowledgepedia_logo.png' %}" id="knowledgepedia_logo">
+    </div>
+    <div id="searchbar-div">
+        <form action="" method="post" id="searchbar" class="flexbox-center">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" hidden>
+        </form>
+    </div>
+    <ul class="flexbox-list">
         {% for entry in entries %}
-            <li>{{ entry }}</li>
+            <div class="flex-item">
+                <li>{{ entry }}</li>
+            </div>
         {% endfor %}
     </ul>
+    
 
 {% endblock %}
