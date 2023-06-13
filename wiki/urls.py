@@ -18,10 +18,12 @@ from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic.base import RedirectView
+from django.shortcuts import redirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("encyclopedia.urls")),
+    path('', lambda request: redirect('wiki/')),
+    path('wiki/', include("encyclopedia.urls")),
     path(
         "favicon.ico",
         RedirectView.as_view(url="/static/images/favicon.ico"),

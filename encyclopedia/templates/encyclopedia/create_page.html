@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout2.html" %}
+
+{% block title %}
+    {{topic}}
+{% endblock %}
+
+{% block body %}
+    {% load static %}
+
+    <div>
+        <h1>Create a Page</h1>
+    </div>
+
+    <form id="create-form" action="{% url 'add_new_page' %}" method="post">
+        {% csrf_token %}
+        {{ form_createMarkdown }}
+        <div id="submit-btn-div"><input type="submit" value="Submit" id="submit-btn"></div>
+    </form>
+
+{% endblock %}

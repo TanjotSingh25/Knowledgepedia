@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout2.html" %}
+
+{% block title %}
+    {{topic}}
+{% endblock %}
+
+{% block body %}
+    {% load static %}
+
+    <md-block>{{content}}</md-block>
+
+    <br><br>
+    <div id="edit-page"><a href="{% url 'edit_page' topic=topic %}">Edit Page</a></div>
+{% endblock %}

@@ -19,10 +19,9 @@
             <input type="submit" hidden>
         </form>
     </div>
-    <div class="flexbox-center" id="func-buttons">
-        <a href="{% url 'add_new_page' %}">Create New Page</a>
-        <a href="{% url 'random' %}">Random Page</a>
-    </div>
+
+    <h1 id="message">Search Results</h1>
+
     <ul class="flexbox-list">
         {% for entry in entries %}
             <a href="{% url 'render_page' topic=entry%}" class="flex-item">
@@ -31,5 +30,5 @@
         {% endfor %}
     </ul>
     
-    <h1 id="message">{{message}}</h1>
+    
 {% endblock %}

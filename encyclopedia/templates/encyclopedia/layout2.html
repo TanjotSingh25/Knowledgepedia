@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+        <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id="navbar">
+            <a id="logo_small" href="{% url 'index' %}"><img src="{% static 'encyclopedia/knowledgepedia_logo.png' %}"></a>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'random' %}">Random</a>
+            <form action="{% url 'search' %}" method="post" id="searchbar-small" autocomplete="off">
+                {% csrf_token %}
+                {{ form_search }}
+                <input type="submit" hidden>
+            </form>
+        </div>
+
+        {% block body %}
+        {% endblock %}
+
+    </body>
+</html>

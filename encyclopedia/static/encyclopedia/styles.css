@@ -1,8 +1,8 @@
 body{
     background-image: url("/static/encyclopedia/black_background2.jpg");
-    /* background-size: cover; */
     color: white;
     margin: 1%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #knowledgepedia_logo{
@@ -17,7 +17,7 @@ body{
     justify-content: center;
 }
 
-#id_query{
+#searchbar input[type="text"]{
     width: 67%;
     line-height: 45px;
     border-radius: 25px;
@@ -46,19 +46,157 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 5%;
+    margin-top: 3%;
+    padding: 0;
 }
 
 .flex-item{
     /* width: auto; */
-    padding: 6% 4%;
+    padding: 5% 3%;
     background-color: #078eefb7;
     border-radius: 25px;
-
+    text-decoration: none;
+    color: white;
 }
 
 .flexbox-list li{
     width: 120px;
     line-height: 50px;
     text-align: center;
+    font-size: 33px;
+}
+
+#func-buttons{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: space-evenly;
+}
+
+#func-buttons a{
+    color: white;
+    width: 10%;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: #5e5e5ec4;
+    line-height: 60px;
+    font-size: 21px;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #5e5e5e54;
+    border-radius: 25px;
+    padding: 10px 5px 5px 5px;
+    align-items: center;
+}
+
+#navbar img{
+    width: 30%;
+}
+
+#logo_small{
+    width: 70%;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #078eef;
+    font-size: 25px;
+}
+
+#searchbar-small{
+    padding-right: 20px;
+    width: 15%;
+}
+
+#searchbar-small input[type="text"]{
+    line-height: 30px;
+    border-radius: 25px;
+    width: 95%;
+    padding-left: 5%;
+    background-color: rgba(255, 255, 255, 0.384);
+    border: 0px;
+    color: white;
+    font-size: 18px;
+}
+
+#searchbar-small input[type="text"]::placeholder {
+    color: rgb(214, 213, 213);
+}
+
+md-block{
+    text-align: center;
+    font-size: 30px;
+    list-style-position: inside;
+}
+
+md-block h1{
+    font-size: 80px;
+}
+
+md-block a{
+    color: #078eef;
+}
+
+#edit-page{
+    position: sticky;
+    bottom: 4%;
+    text-align: center;
+}
+
+#edit-page a{
+    color: #078eef;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #5e5e5e54;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+#create-form{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    row-gap: 7%;
+    margin: 2% 10% 3% 10%;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+#create-form label{
+    font-size: 30px;
+}
+
+.fill-area{
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#submit-btn-div{
+    grid-column: 1/3;
+    text-align: center;
+}
+
+#submit-btn{
+    width: 13%;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1%;
+    background-color: #5e5e5ed2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+}
+
+#submit-btn:hover{
+    background-color: #5e5e5e;
+}
+
+#message{
+    font-size: 55px;
 }
