@@ -158,7 +158,7 @@ md-block a{
 
 #create-form{
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 10rem 90%;
     row-gap: 7%;
     margin: 2% 10% 3% 10%;
 }
