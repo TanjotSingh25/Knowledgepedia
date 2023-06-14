@@ -83,6 +83,7 @@ def edit_page(request, topic):
         if form.is_valid():
             title = form.cleaned_data["title"]
             content = form.cleaned_data["content"]
+            print(title, topic)
             if(title != topic):
                 message = "This will not work here sucka"
             else:

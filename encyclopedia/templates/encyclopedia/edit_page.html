@@ -17,7 +17,7 @@
         <div id="submit-btn-div"><input type="submit" value="Submit" id="submit-btn"></div>
     </form> -->
 
-    <form id="create-form" action="/wiki/edit/CSS" method="post">
+    <form id="create-form" action="{% url 'edit_page' topic=topic %}" method="post">
         {% csrf_token %}
 
         <label for="id_title">Title :</label> 

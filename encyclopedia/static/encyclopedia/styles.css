@@ -51,7 +51,7 @@ body{
 }
 
 .flex-item{
-    /* width: auto; */
+    margin: 0 20px 50px 20px;
     padding: 5% 3%;
     background-color: #078eefb7;
     border-radius: 25px;
@@ -74,7 +74,7 @@ body{
 
 #func-buttons a{
     color: white;
-    width: 10%;
+    width: 12rem;
     text-align: center;
     border-radius: 25px;
     text-decoration: none;
@@ -200,3 +200,10 @@ h1{
 #message{
     font-size: 55px;
 }
+
+/* @media (max-width: 1600px){
+    #func-buttons a{
+        width: 12%;
+        font-size: 20px;
+    }
+} */
