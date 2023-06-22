@@ -28,11 +28,6 @@ class EditMarkdown(forms.Form):
                               widget=forms.Textarea(attrs={'placeholder': 'Markdown Content', 'class': 'fill-area', 'rows': 25, 'cols': 40}),
                               required=True)
 
-    # def __init__(self, title_value="", content_value="", *args, **kwargs):
-    #     super().__init__(*args, **kwargs)
-    #     self.fields['title'].widget.attrs['value'] = title_value
-    #     self.fields['content'].initial = content_value
-
 def index(request):
     message = ''
     if 'message' in request.GET:
